@@ -2,11 +2,11 @@
 # Laravel-ProntoForms 
 Package intended for sending forms to the ProntoForms app directly from a Laravel project in a clean and simple way. 
 ## Installation
-1. Run 
+* Run 
 ``` bash
  composer require omaromp2/laraprontoforms
 ```
-2. Add the following line to your `.env` file:
+* Add the following line to your `.env` file:
 ``` code
  # ProntoForms Params
 PRONTO_USER=<your_auth_prontoforms_user_name>
@@ -15,14 +15,14 @@ PRONTO_FORM_ID=<your_form_id>
 PRONTO_USER_ID=<your_user_id>
 ```
 
-3. Run `php artisan vendor:publish` to publish the package's config file.
+* Run `php artisan vendor:publish` to publish the package's config file.
 
 ## Usage 
-1. Add the use case to your controller:
+* Add the use case to your controller:
 ``` php
  use omaromp2\laraprontoforms\ProntoForms;
 ```
-2. Prepare an array with your form label as the key and the answer as the value:
+* Prepare an array with your form label as the key and the answer as the value:
 ``` php
 $questions = [
     'Label1' => 'Answer1',
@@ -30,9 +30,9 @@ $questions = [
 ]; 
 ```
 
-3. Send the form:
+* Send the form:
 ``` php
 ProntoForms::sendForm($questions);
 ```
 
-4. Check your response. 
+* Check your response. 
