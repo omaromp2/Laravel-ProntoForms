@@ -17,7 +17,7 @@ PRONTO_USER_ID=<your_user_id>
 
 * Run `php artisan vendor:publish` to publish the package's config file.
 
-## Usage 
+## Usage (Send Form)
 * Add the use case to your controller:
 ``` php
  use omaromp2\laraprontoforms\ProntoForms;
@@ -36,3 +36,9 @@ ProntoForms::sendForm($questions);
 ```
 
 * Check your response. 
+
+## Retrieve Form 
+``` php
+$formId = '<your_form_submission_id>';
+ProntoForms::getForm($form_id);
+```
