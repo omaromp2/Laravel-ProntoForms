@@ -40,5 +40,11 @@ ProntoForms::sendForm($questions);
 ## Retrieve Form 
 ``` php
 $formId = '<your_form_submission_id>';
-ProntoForms::getForm($form_id);
+ProntoForms::fetchForm($form_id);
+```
+
+## Retrieve PDF 
+``` php
+$formId = '<your_form_submission_id>';
+ProntoForms::fetchPDF($form_id);
 ```
